@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<strong> TO-DO LIST </strong> 
+    <br>
+    {% for things in todo_list%}
+        {{ things|safe }}<br>
+    {% endfor %}
+
+{% endblock %}
